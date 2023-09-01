@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .button{
+        margin-bottom: 10px;
+        margin-right:20px;
+        margin-top:10px;
+        padding:10px;
+        border:1px solid black;
+        border-radius:25%;
+        color:white;
+        background-color: darkcyan;
+    }
+    .container{
+        height:550px;
+        width:1500px;
+        background-color:beige;
+    }
+    .row{
+        display:flex;
+    }
+</style>
+<body>
+    <h1 class="text-center">Welcome To Calculate Me!</h1>
+    <div class="container">
+        <div class="row">
+        <input class="input" type="text" />
+        </div>
+        <div class="row">
+           <button class="button" onclick="clearinput()">C</button>
+           <button class="button"onclick="updateinput('%')">%</button>
+           <button class="button" onclick="updateinput('/')">/</button>
+           <button class="button" onclick="updateinput('+')">+</button>
+        </div>
+        <div class="row">
+            <button class="button" onclick="updateinput(7)">7</button>
+            <button class="button"onclick="updateinput(8)">8</button>
+            <button class="button" onclick="updateinput(9)">9</button>
+            <button class="button" onclick="updateinput('*')">*</button>
+         </div>
+         <div class="row">
+            <button class="button" onclick="updateinput(4)">4</button>
+            <button class="button"onclick="updateinput(5)">5</button>
+            <button class="button" onclick="updateinput(6)">6</button>
+            <button class="button" onclick="updateinput('-')">-</button>
+         </div>
+         <div class="row">
+            <button class="button" onclick="updateinput(1)">1</button>
+            <button class="button"onclick="updateinput(2)">2</button>
+            <button class="button" onclick="updateinput(3)">3</button>
+            <button class="button" onclick="updateinput('()')">()</button>
+           
+         </div>
+         <div class="row">
+            <button class="button" onclick="calculate()">=</button>
+            <button class="button" onclick="updateinput(0)">0</button>
+         </div>
+         
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
